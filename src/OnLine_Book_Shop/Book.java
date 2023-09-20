@@ -8,6 +8,7 @@ public class Book implements Serializable
 	public enum Category 
 	{
 	    FICTION, NON_FICTION, THRILLER, ROMANCE, SCIENCE_FICTION
+
 	}
 	private static final long serialVersionUID = 1L;
 
@@ -17,7 +18,8 @@ public class Book implements Serializable
 	private Category category;
 	private LocalDate publishDate;
 
-	public Book(String title, String author, double price, Category category, LocalDate publishDate) {
+	public Book(String title, String author, double price, Category category, LocalDate publishDate)
+ {
 		this.title = title;
 		this.author = author;
 		this.price = price;
@@ -25,51 +27,63 @@ public class Book implements Serializable
 		this.publishDate = publishDate;
 	}
 
-	public String getTitle() {
+	public String getTitle()
+ {
 		return title;
 	}
 
-	public void setTitle(String title) {
+	public void setTitle(String title) 
+{
 		this.title = title;
 	}
 
-	public String getAuthor() {
+	public String getAuthor()
+ {
 		return author;
 	}
 
-	public void setAuthor(String author) {
+	public void setAuthor(String author)
+ {
 		this.author = author;
 	}
 
-	public double getPrice() {
+	public double getPrice() 
+{
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(double price)
+ {
 		this.price = price;
 	}
 
-	public Category getCategory() {
+	public Category getCategory() 
+{
 		return category;
 	}
 
-	public void setCategory(Category category) {
+	public void setCategory(Category category) 
+{
 		this.category = category;
 	}
 
-	public LocalDate getPublishDate() {
+	public LocalDate getPublishDate() 
+{
 		return publishDate;
 	}
 
-	public void setPublishDate(LocalDate publishDate) {
+	public void setPublishDate(LocalDate publishDate) 
+{
 		this.publishDate = publishDate;
 	}
 
 	@Override
-	public String toString() {
+	public String toString()
+ {
 		return "Title: " + title + ", Author: " + author + ", Price: $" + price + ", Category: " + category
 				+ ", Publish Date: " + publishDate;
-	}
+	
+}
 }
 
 
